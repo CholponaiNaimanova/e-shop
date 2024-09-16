@@ -1,14 +1,16 @@
 import React from 'react';
-import { FaRegHeart } from "react-icons/fa6";
+import { IoMdHeartEmpty } from "react-icons/io";
 import { SlBasket } from "react-icons/sl";
+import { FiSearch } from "react-icons/fi";
 
 const Header: React.FC = () => {
   return (
-    <div id="heaedr">
+    <div id="header">
       <div className="container">
         <div className="header">
 
           <h1>Exclusive</h1>
+
           <div className="header-nav">
             <a href="">Home</a>
             <a href="">Contact</a>
@@ -17,9 +19,12 @@ const Header: React.FC = () => {
           </div>
 
           <div className="icons">
+            <div className="input">
             <input type="text" placeholder='What are you looking for?'/>
+            <p><FiSearch/></p>
+            </div>
 
-            <a href=""><FaRegHeart /></a>
+            <a href=""><IoMdHeartEmpty/></a>
             <a href=""><SlBasket /></a>
           </div>
         </div> 
