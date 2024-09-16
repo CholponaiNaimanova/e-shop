@@ -1,0 +1,38 @@
+.sale{
+    background: black;
+    color: white;
+    height: 50px;
+    .saleText{
+        padding-top: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 21px;
+        }
+        a{
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            padding: 0 14px;
+        }
+
+        .select{
+            position: absolute;
+            right: 120px;
+            select{
+                background: none;
+                border: none;
+                outline: none;
+                option{
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+            }
+        }
+        
+    }
+}

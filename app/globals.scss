@@ -1,0 +1,11 @@
+@import "../public/assets/style/Header.scss";
+@import "../public/assets/style/Sale.scss";
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
