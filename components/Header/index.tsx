@@ -1,27 +1,34 @@
 import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import logo from '@/public/assets/logo.png';
+import { FaRegHeart } from "react-icons/fa6";
+import { SlBasket } from "react-icons/sl";
 
 const Header: React.FC = () => {
   return (
-    <header className="w-full py-4 bg-gray-800 text-white">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="flex items-center cursor-pointer">
-          <Link href="/" legacyBehavior>
-            <a>
-              <Image src={logo} alt="Logo" width={50} height={50} />
-            </a>
-          </Link>
-          <span className="ml-2 text-xl font-bold">My Shop</span>
-        </div>
-        <nav>
-          <Link href="/login" legacyBehavior>
-            <a className="text-lg">Login</a>
-          </Link>
-        </nav>
+    <div id="heaedr">
+      <div className="container">
+        <div className="header">
+
+          <h1>Exclusive</h1>
+          <div className="header-nav">
+            <a href="">Home</a>
+            <a href="">Contact</a>
+            <a href="">About</a>
+            <a href="">Sign Up</a>
+          </div>
+
+          <div className="icons">
+            <input type="text" placeholder='What are you looking for?'/>
+
+            <a href=""><FaRegHeart /></a>
+            <a href=""><SlBasket /></a>
+          </div>
+        </div> 
+
+        
+
+  
       </div>
-    </header>
+    </div>
   );
 };
 
