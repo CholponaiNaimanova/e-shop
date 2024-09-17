@@ -27,11 +27,14 @@ const Header: React.FC = () => {
             <a href=""><IoMdHeartEmpty/></a>
             <a href=""><SlBasket /></a>
           </div>
+
+
         </div> 
-
         
+        <div className="hr">
+        <hr />
+        </div>
 
-  
       </div>
     </div>
   );
