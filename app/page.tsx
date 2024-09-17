@@ -6,6 +6,8 @@ import React, { useEffect, useState } from 'react';
 import { productsAPI } from '@/lib/product';
 import { formatCurrency } from '@/utils/formatCurrency';
 import Sale from '@/components/Sale';
+import Section1 from '@/components/Section1';
+import Footer from '@/components/Footer';
 
 const Home: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -22,6 +24,7 @@ const Home: React.FC = () => {
     <>
     <Sale/>
       <Header />
+      <Section1/>
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
           <h2 className="text-3xl font-bold">Products</h2>
@@ -54,6 +57,8 @@ const Home: React.FC = () => {
           </ul>
         )}
       </main>
+
+      <Footer/>
     </>
   );
 };
