@@ -10,8 +10,9 @@ const Section1: React.FC = () => {
         <div className="section">
             <div className="section2">
                 <div className="fashion">
-                    <h1>Woman’s Fashion <span><MdChevronRight /></span></h1> 
-                    <h1>Men’s Fashion <span><MdChevronRight /></span></h1>
+                    <div className="">
+                    <h1>Woman’s Fashion</h1> 
+                    <h1>Men’s Fashion </h1>
                     <h1>Electronics</h1>
                     <h1>Home & Lifestyle</h1>
                     <h1>Medicine</h1>
@@ -19,6 +20,18 @@ const Section1: React.FC = () => {
                     <h1>Baby’s & Toys</h1>
                     <h1>Groceries & Pets</h1>
                     <h1>Health & Beauty</h1>
+                    </div>
+                    <div className="span">
+                        <span><MdChevronRight /></span>
+                        <span><MdChevronRight /></span>
+                        <span><MdChevronRight /></span>
+                        <span><MdChevronRight /></span>
+                        <span><MdChevronRight /></span>
+                        <span><MdChevronRight /></span>
+                        <span><MdChevronRight /></span>
+                        <span><MdChevronRight /></span>
+                        <span><MdChevronRight /></span>
+                    </div>
                 </div>
 
                 <div className="left"></div>
