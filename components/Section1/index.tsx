@@ -11,7 +11,7 @@ const Section1: React.FC = () => {
 
  
     const categories = [
-        { title: "Woman’s Fashion", subs: ["Elegant dresses", "Coats", "Bags"] },
+        { title: "Woman’s Fashion", subs: ["dresses", "Coats", "Bags"] },
         { title: "Men’s Fashion", subs: ["Suits", "Watches", "loafers"] },
         { title: "Electronics", subs: ["Gadgets", "Devices", "Technologies"] },
         { title: "Home & Lifestyle", subs: ["Interior Design", "Sustainability", "Organization"] },

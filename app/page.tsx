@@ -8,7 +8,7 @@ import { formatCurrency } from '@/utils/formatCurrency';
 import Sale from '@/components/Sale';
 import Section1 from '@/components/Section1';
 import Footer from '@/components/Footer';
-// import Featured from '@/components/Featured';
+import Featured from '@/components/Featured';
 
 const Home: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -59,7 +59,7 @@ const Home: React.FC = () => {
         )}
       </main>
 
-      {/* <Featured/> */}
+      <Featured/>
       <Footer/>
     </>
   );
