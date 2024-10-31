@@ -9,7 +9,7 @@ import Image from 'next/image';
 import QrCode from "@/public/assets/img/QrCode.png";
 import GooglePlay from "@/public/assets/img/googleplay.png";
 import AppStore from "@/public/assets/img/googleplay.png";
-
+ 
 const Footer: React.FC = () => {
     return(
         <div id="footer">

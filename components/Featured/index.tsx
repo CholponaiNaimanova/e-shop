@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import Image from 'next/image'; 
 import playstation from "@/public/assets/img/playstation.png"
 import women from "@/public/assets/img/woman.png"
 import amazon from "@/public/assets/img/amazonEcho.png"
@@ -9,8 +9,10 @@ import { RiCustomerServiceLine } from "react-icons/ri";
 import { HiOutlineShieldCheck } from "react-icons/hi2";
 
 
-const Featured: React.FC = () => (
-    <div className="arrival">
+const Featured: React.FC = () => {
+
+    return(
+        <div className="arrival">
         <div className="container">
             <div className="arrivall">
                 <div className="fea">
@@ -112,7 +114,8 @@ const Featured: React.FC = () => (
 
             </div>
         </div>
-    </div>
-)
+        </div>
+    )
+}
 
 export default Featured

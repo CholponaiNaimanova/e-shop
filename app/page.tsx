@@ -9,6 +9,10 @@ import Sale from '@/components/Sale';
 import Section1 from '@/components/Section1';
 import Footer from '@/components/Footer';
 import Featured from '@/components/Featured';
+import SignUp from '@/components/SignUp';
+import Products from '@/components/Products';
+import Todays from '@/components/Todays';
+import Categories from '@/components/Categories';
 
 const Home: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -23,10 +27,12 @@ const Home: React.FC = () => {
 
   return (
     <>
-    <Sale/>
+      <Sale />
       <Header />
-      <Section1/>
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <Section1 />
+      <Todays />
+      <Categories/>
+      {/* <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
           <h2 className="text-3xl font-bold">Products</h2>
         </div>
@@ -57,10 +63,12 @@ const Home: React.FC = () => {
             ))}
           </ul>
         )}
-      </main>
+      </main> */}
+      {/* <SignUp /> */}
 
-      <Featured/>
-      <Footer/>
+      <Products />
+      <Featured />
+      <Footer />
     </>
   );
 };
