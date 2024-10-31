@@ -1,0 +1,199 @@
+#todays{
+    margin-top: 110px;
+    .container{
+        width: 80%;
+        margin: 0 auto;
+        .todo{
+            display: flex;
+            flex-direction: column;
+            .our{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                .a{
+                    background: #DB4444;
+                    width: 20px;
+                    height: 40px;
+                    border-radius: 4px;
+                }
+                h1{
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #DB4444;
+                }
+            }
+            .countdown{
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                margin-top: 20px;
+                
+            .f{
+                margin-right: 120px;
+                h1{
+                    font-weight: 600;
+                    font-size: 36px;
+                    line-height: 48px;                
+                }
+            }
+            p{
+                font-size: 25px;
+                font-weight: 700;
+                color: #db4444a4;
+            }
+                .c{
+                    h2{
+                        font-weight: 500;
+                    }
+
+                    span{
+                        font-weight: 700;
+                        font-size: 30px;
+                    }
+                }
+            }
+    
+            .cards{
+                display: flex;
+                gap: 30px;
+                overflow-x: auto;
+                padding-bottom: 20px;
+                scroll-snap-type: x mandatory;
+                scrollbar-width: none;
+                .cards::-webkit-scrollbar {
+                    display: none;
+                    height: 0;
+                    width: 0;
+
+                }
+                .cards {
+                    scrollbar-width: none;
+                }
+                  .card {
+                    background: #F5F5F5;
+                    width: 270px;
+                    height: 250px;
+                    margin-top: 50px;
+                    position: relative;
+                  
+                    .img {
+                      display: flex;
+                      justify-content: center;
+                      padding-top: 20px;
+                    }
+                  
+                    .a {
+                      font-size: 24px;
+                      position: absolute;
+                      top: 15px;
+                      right: 15px;
+                      display: flex;
+                      flex-direction: column;
+                      gap: 15px;
+                    }
+                  
+                    .addtocart {
+                      position: absolute;
+                      background: black;
+                      color: white;
+                      width: 270px;
+                      height: 45px;
+                      text-align: center;
+                      padding-top: 10px;
+                      opacity: 0;
+                      bottom: 1px;
+                      left: 50%;
+                      transform: translateX(-50%);
+                      transition: opacity 0.7s ease;
+                      cursor: pointer;
+                    }
+                  
+                    &:hover .addtocart {
+                      opacity: 1;
+                    }
+                  }
+                  
+                  .cardText {
+                    p {
+                      font-size: 16px;
+                      font-weight: 500;
+                      margin-top: 18px;
+                    }
+                  
+                    .price {
+                      display: flex;
+                      gap: 15px;
+                  
+                      p {
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #DB4444;
+                      }
+                  
+                      .star {
+                        display: flex;
+                        margin-top: 18px;
+                  
+                        .st {
+                          color: rgba(0, 0, 0, 0.34);
+                          font-size: 20px;
+                        }
+                      }
+                  
+                      h3 {
+                        margin-top: 18px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: rgba(0, 0, 0, 0.497);
+                      }
+                      .cardText{
+                        p{
+                          font-size: 16px;
+                          font-weight: 500;
+                          margin-top: 18px;
+                        }
+                        .price{
+                          display: flex;
+                          gap: 15px;
+                          p{
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: #DB4444;
+                          }
+                          .star{
+                            display: flex;
+                            margin-top: 18px;
+                            .st{
+                              color: rgba(0, 0, 0, 0.34);
+                              font-size: 20px;
+                            }
+                            
+                          }
+                          h3{
+                            margin-top: 18px;
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: rgba(0, 0, 0, 0.497);
+                          }
+                        }
+                      }
+                    }
+                }
+              }
+
+              .btn{
+                display: flex;
+                justify-content: center;
+                margin: 90px 0;
+                button{
+                  background: #DB4444;
+                  padding: 16px 48px 16px 48px;
+                  border-radius: 4px;
+                  color: white;
+                  font-size: 16px;
+                }
+              }
+        }
+    }
+}
